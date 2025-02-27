@@ -1,6 +1,8 @@
 import axios from 'axios';
 import {NextResponse} from 'next/server';
 
+export const maxDuration = 30;
+
 async function GET(req: Request) {
     // Requestオブジェクトのurlをパース
     const {searchParams} = new URL(req.url);
